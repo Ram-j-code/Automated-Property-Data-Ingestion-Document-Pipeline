@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Run Full Stack (Flask + React)",
+      "configurations": ["Flask Backend", "React Frontend"],
+      "stopAll": true
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Flask Backend",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/real_estate_backend/app.py",
+      "console": "integratedTerminal",
+      "env": {
+        "FLASK_APP": "app.py",
+        "FLASK_ENV": "development"
+      }
+    },
+    {
+      "name": "React Frontend",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm start",
+      "cwd": "${workspaceFolder}/real_estate_frontend"
+    }
+  ]
+}

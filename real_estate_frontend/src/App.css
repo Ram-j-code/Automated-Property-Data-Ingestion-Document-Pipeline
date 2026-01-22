@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+/* Slower glowing animation for the button */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Fade-in stagger animation for form fields */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-delay-1 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+.fade-in-delay-2 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+.fade-in-delay-3 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.9s;
+}
+.fade-in-delay-4 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+.fade-in-delay-5 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.5s;
+}
+.fade-in-delay-6 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.8s;
+}
+.fade-in-delay-7 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 2.1s;
+}
+/* Slow pulse for button */
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+  }
+}
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+/* Fade-in stagger for form */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-delay-1 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+.fade-in-delay-2 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+.fade-in-delay-3 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.9s;
+}
+.fade-in-delay-4 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.2s;
+}
+.fade-in-delay-5 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.5s;
+}
+.fade-in-delay-6 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 1.8s;
+}
+.fade-in-delay-7 {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 2.1s;
+}
+
+/* Success animation */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-pop {
+  animation: pop 0.6s ease forwards;
+}
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp2 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+/* Smooth fade-out for success screen */
+@keyframes fadeOutSmooth {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out-smooth {
+  animation: fadeOutSmooth 1s ease forwards;
+}
+/* Bounce animation for success checkmark */
+@keyframes softBounce {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: softBounce 0.7s ease-out forwards;
+}
+
+.text-gold {
+  color: #d4af37;
+}
+
+@keyframes fadeWords {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+.animate-fade {
+  animation: fadeWords 4s ease-in-out infinite;
+}

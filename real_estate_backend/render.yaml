@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: real-estate-backend
+    env: python
+    region: oregon
+    buildCommand: ''
+    startCommand: 'python app.py'
+    plan: free
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
